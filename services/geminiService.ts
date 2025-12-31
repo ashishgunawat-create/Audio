@@ -1,5 +1,5 @@
 import { GoogleGenAI, Modality } from "@google/genai";
-import { VoiceName } from "../types.ts";
+import { VoiceName } from "../types";
 
 const API_KEY = process.env.API_KEY || '';
 
@@ -14,7 +14,7 @@ export const generateSpeech = async (
   voiceName: VoiceName = VoiceName.Kore
 ): Promise<string | undefined> => {
   if (!API_KEY) {
-    throw new Error("API_KEY is missing. Please set it in the environment or index.html.");
+    throw new Error("API_KEY is missing. Please set it in the environment.");
   }
 
   const ai = new GoogleGenAI({ apiKey: API_KEY });
