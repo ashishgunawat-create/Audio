@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mic } from 'lucide-react';
-import { VoiceName } from '../types';
+import { VoiceName } from '../types.ts';
 
 interface VoiceSelectorProps {
   selectedVoice: VoiceName;

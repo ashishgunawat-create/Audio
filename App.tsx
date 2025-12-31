@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { Play, Square, Loader2, Sparkles, Wand2, Download } from 'lucide-react';
-import { ScriptEditor } from './components/ScriptEditor';
-import { VoiceSelector } from './components/VoiceSelector';
-import { Visualizer } from './components/Visualizer';
-import { VoiceName, INITIAL_SCRIPT } from './types';
-import { generateSpeech } from './services/geminiService';
-import { decodeBase64, decodeAudioData, cleanScript, createWavBlob } from './utils/audioUtils';
+import { ScriptEditor } from './components/ScriptEditor.tsx';
+import { VoiceSelector } from './components/VoiceSelector.tsx';
+import { Visualizer } from './components/Visualizer.tsx';
+import { VoiceName, INITIAL_SCRIPT } from './types.ts';
+import { generateSpeech } from './services/geminiService.ts';
+import { decodeBase64, decodeAudioData, cleanScript, createWavBlob } from './utils/audioUtils.ts';
 
 // Constants for Audio Context
 const SAMPLE_RATE = 24000;
