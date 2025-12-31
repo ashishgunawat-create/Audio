@@ -1,0 +1,5 @@
+{
+  "name": "Midnight Motivation TTS",
+  "description": "A high-fidelity text-to-speech generator using Gemini 2.5 Flash. Turn your scripts into emotional, spoken audio instantly.",
+  "requestFramePermissions": []
+}
